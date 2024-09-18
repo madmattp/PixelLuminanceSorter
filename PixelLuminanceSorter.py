@@ -73,11 +73,11 @@ def sort_col(image, mask, width, height, reverse=False):
 
 if __name__ == "__main__":
     # Configs
-    image_name = 'image.png'
-    min_bright = 80
-    max_bright = 220
-    opt = 1   # 0 = Vertical, 1 = Horizontal
-    reverse = False
+    image_name = 'image.jpg'
+    min_bright = 40
+    max_bright = 250
+    opt = 1   # 1 = Vertical, 0 = Horizontal
+    reverse = True
 
     try:
         image = Image.open(image_name).convert("RGB")
@@ -89,15 +89,12 @@ if __name__ == "__main__":
 
     mask = generate_mask(image, min_bright, max_bright)
 
-    if opt == 0:  # Vertical
+    if opt == 0:  # Horizontal
         for y in range(height):
             sort_line(image=image, mask=mask, width=width, height=y, reverse=reverse)
-    elif opt == 1: # Horizontal
+    elif opt == 1: # Vertical
         for x in range(width):
             sort_col(image=image, mask=mask, width=x, height=height, reverse=reverse)
 
     frame = image.copy()
     frame.save("sorted_image.png")
-    
-   
-    
