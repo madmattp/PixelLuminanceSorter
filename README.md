@@ -3,10 +3,16 @@
 This Python script processes an image by sorting its pixels based on brightness. The sorting can be done either horizontally or vertically within masked regions of the image, determined by brightness thresholds.
 Inspired by Kim Asendorf's [ASDF Pixel Sort](https://github.com/kimasendorf/ASDFPixelSort/tree/master)
 
-### Features
+<p align="center">
+   <img src="https://github.com/user-attachments/assets/bb41e2be-5264-4660-8556-8fce4d7e5205" alt="sorted_image" width="50%">
+</p>
+
+### Features!
+
 - Sort pixels by brightness
 - Supports vertical and horizontal sorting
 - Customizable brightness thresholds
+
 
 ### Installation
 
