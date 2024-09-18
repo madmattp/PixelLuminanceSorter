@@ -76,7 +76,7 @@ if __name__ == "__main__":
     image_name = 'image.jpg'
     min_bright = 40
     max_bright = 250
-    opt = 1   # 1 = Vertical, 0 = Horizontal
+    opt = 0   # 1 = Vertical, 0 = Horizontal
     reverse = True
 
     try:
