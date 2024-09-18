@@ -18,7 +18,7 @@ Inspired by Kim Asendorf's [ASDF Pixel Sort](https://github.com/kimasendorf/ASDF
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-repo/PixelLuminanceSorter.git
+   git clone https://github.com/madmattp/PixelLuminanceSorter.git
    ```
 2. Install the required dependencies:
    ```bash
